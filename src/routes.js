@@ -1,11 +1,14 @@
 import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
-import App from './App';
+import { Posts } from './components';
 
 export default (store) => {
     return (
         <BrowserRouter>
-            <Route path="/hello" component={App} />
+            <div>
+                Header
+                <Route path="/" component={Posts} />
+            </div>
         </BrowserRouter>
     )
 }
